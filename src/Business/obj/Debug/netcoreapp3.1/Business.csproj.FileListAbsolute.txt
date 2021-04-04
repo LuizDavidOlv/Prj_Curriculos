@@ -1,0 +1,9 @@
+C:\Estudo\DotNetCore\DesafioMVC\src\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+C:\Estudo\DotNetCore\DesafioMVC\src\Business\bin\Debug\netcoreapp3.1\Business.dll
+C:\Estudo\DotNetCore\DesafioMVC\src\Business\bin\Debug\netcoreapp3.1\Business.pdb
+C:\Estudo\DotNetCore\DesafioMVC\src\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Estudo\DotNetCore\DesafioMVC\src\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Estudo\DotNetCore\DesafioMVC\src\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Estudo\DotNetCore\DesafioMVC\src\Business\obj\Debug\netcoreapp3.1\Business.dll
+C:\Estudo\DotNetCore\DesafioMVC\src\Business\obj\Debug\netcoreapp3.1\Business.pdb
+C:\Estudo\DotNetCore\DesafioMVC\src\Business\obj\Debug\netcoreapp3.1\Business.csprojAssemblyReference.cache

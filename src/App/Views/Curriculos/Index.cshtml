@@ -1,0 +1,54 @@
+﻿@model IEnumerable<App.Models.CurriculoViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Curriculos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a class="btn btn-info" asp-action="Create">Novo Currículo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=> model.ExperienciaTotal)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExperienciaTotal)
+            </td>
+            <td>
+                <a class="btn btn-light" asp-controller="Formacoes" asp-action="Index" asp-route-id="@item.Id/">Formação</a>
+                <a class="btn btn-light" asp-controller="Formacoes" asp-action="Index" asp-route-id="@item.Id/">Experiência</a>
+                <a class="btn btn-light" asp-controller="Formacoes" asp-action="Index" asp-route-id="@item.Id/">Empresas</a>
+            </td>
+
+            <td class="text-right">
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search"></spam></a>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam></a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam></a>
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>
